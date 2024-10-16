@@ -20,35 +20,9 @@ public class GT4500 implements SpaceShip {
     this.secondaryTorpedoStore = new TorpedoStore(secondaryCount, secondaryFailRate);
   }
 
-  public boolean fireLaser(FiringMode firingMode) {
-    boolean firingSuccess = false;
+  
 
-    switch (firingMode) {
-        boolean firingSuccess = false;
 
-    switch (firingMode) {
-        case SINGLE:
-            
-            firingSuccess = fireSingleLaser();
-            break;
-        case ALL:
-            
-            firingSuccess = fireAllLasers();
-            break;
-    }
-
-    return firingSuccess;
-}
-
-private boolean fireSingleLaser() {
-    
-    return true; 
-}
-
-private boolean fireAllLasers() {
-    
-    return true;
-  }
 
   /**
   * Tries to fire the torpedo stores of the ship.
